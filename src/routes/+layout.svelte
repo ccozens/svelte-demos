@@ -4,7 +4,8 @@
 	let { children } = $props<{ children: Snippet }>();
 
 	import Nav from '$lib/components/Nav.svelte';
+	let pages = ['Home', 'Counter']
 </script>
 
-<Nav />
+<Nav {pages} />
 {@render children()}
